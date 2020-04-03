@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.outerNode{
+    width: 505px;
+    height: 406px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -204px 0 0 -253.5px;
+    border: 1px solid #a6a18d;
+    border-radius: 8px;
+    box-shadow: 0 0 16px #a6a18d;
+}
+.innerNode{
+    width: 503px;
+    height: 405px;
+    border-left: 1px solid #ceccbf;
+    border-top: 1px solid #e1d1b9;
+    border-radius: 8px;
+    border-right: 1px solid #ceccbf;
+    overflow: hidden;
+}
+.topNode{
+    width: 100%;
+    height: 198px;
+    border-bottom: 1px solid #787463;
+    background: url("data/意外.png") center center;
+    background-size: cover;
+    transition: 0.7s;
+    position: relative;
+}
+ .musicName{
+    color: white;
+    left: 5px;
+    bottom: 2px;
+    position: absolute;
+}
+.lineNode{
+    width: 100%;
+    height: 46px;
+    border-top: 1px solid #f9f7ee;
+    border-bottom: 1px solid #a29d8a;
+    background: url("musicImages/linebg.jpg") repeat-x;
+}
+.progressNode{
+    width: 440px;
+    height: 18px;
+    float: left;
+    margin: 13px 0 0 28px;
+    background: url("musicImages/progressbg.jpg") repeat-x;
+    position: relative;
+}
+.progressNode .progressLeft{
+    width: 7px;
+    height: 100%;
+    background: url("musicImages/leftNode.jpg") no-repeat;
+    position: absolute;
+    left: 0;
+}
+.progressNode .progressRight{
+    width: 7px;
+    height: 100%;
+    background: url("musicImages/rightNode.jpg") no-repeat;
+    position: absolute;
+    right: 0;
+}
+.trueLine{
+    width: 0%;
+    height: 12px;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    background: url("musicImages/green_bg.png") repeat-x;
+    border-radius: 6px;
+    border-right: 1px solid #787463;
+}
+.bottomNode{
+    width: 100%;
+    height: 157px;
+    border-top: 1px solid #a29d8a;
+    background: url("musicImages/bottomBg.jpg") repeat-x;
+    position: relative;
+}
+.bottomNode .lastNode{
+    width: 75px;
+    height: 74px;
+    position: absolute;
+    background: url("musicImages/lastBg.png") no-repeat;
+    top: 39px;
+    left: 118px;
+    cursor: pointer;
+}
+/*播放*/
+.bottomNode .pauseNode{
+    width: 95px;
+    height: 94px;
+    position: absolute;
+    background: url("musicImages/play-1.png") no-repeat;
+    left: 202px;
+    top: 29px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+/*暂停*/
+.bottomNode .playNode{
+    width: 95px;
+    height: 94px;
+    position: absolute;
+    background: url("musicImages/pause-1.png") no-repeat;
+    left: 202px;
+    top: 29px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+.bottomNode .nextNode{
+    width: 75px;
+    height: 74px;
+    position: absolute;
+    background: url("musicImages/rightbg.png") no-repeat;
+    top: 39px;
+    left: 306px;
+    cursor: pointer;
+}
+.bottomNode .volumeNode{
+    width: 37px;
+    height: 32px;
+    position: absolute;
+    background: url("musicImages/volume.png") no-repeat;
+    right: 43px;
+    top: 58px;
+    cursor: pointer;
+}
+.bottomNode .no_volumeNode{
+    width: 37px;
+    height: 32px;
+    position: absolute;
+    background: url("musicImages/no_volume.png") no-repeat;
+    right: 43px;
+    top: 58px;
+    cursor: pointer;
+}
+.timeNode{
+    position: absolute;
+    left: 5px;
+    top: 2px;
+}
